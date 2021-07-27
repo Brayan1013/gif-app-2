@@ -4,6 +4,7 @@ import './home.css';
 import { CardComponent } from './Card';
 import axios from 'axios';
 import { Loading } from './Loading';
+import { motion } from 'framer-motion';
 
 export const Home = () => {
     const [gift, setGift] = useState("One Punch");
@@ -18,6 +19,13 @@ export const Home = () => {
         const { data } = await axios.get(url);
         setGifs(data.data);
     }
+
+    const variants = {
+        visible: { opacity: 1 },
+        hidden: { opacity: 0 },
+        transition: { duration: 4 }
+    }
+
 
     useEffect(() => {
         getGifInformation();
@@ -42,7 +50,7 @@ export const Home = () => {
                 </Col>
             </Row>
 
-            <div className="card-container">
+            <motion.div initial="hidden" animate="visible" variants={variants} className="card-container">
                 {gifs.length !== 0 &&
                     gifs.map(gif => {
                         return (
@@ -50,7 +58,7 @@ export const Home = () => {
                         )
                     })
                 }
-            </div>
+            </motion.div>
         </>
     )
 }
