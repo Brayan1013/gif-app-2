@@ -25,7 +25,7 @@ export const Home = () => {
     return (
         <>
             <Row>
-                <Col span={24} className="head-text">Welcome to the gif app</Col>
+                <Col span={24} className="head-text">Bienvenidos a la nueva app</Col>
             </Row>
 
             <Row>
