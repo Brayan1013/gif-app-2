@@ -33,7 +33,7 @@ export const Home = () => {
     return (
         <>
             <Row>
-                <Col span={24} className="head-text">Welcome to the gif app</Col>
+                <Col span={24} className="head-text">Welcome to the gif app made by Brayan Mora</Col>
             </Row>
 
             <Row>
