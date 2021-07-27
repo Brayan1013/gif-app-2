@@ -34,6 +34,7 @@ export const Home = () => {
         <>
             <Row>
                 <Col span={24} className="head-text">Welcome to the gif app</Col>
+                <h1>We are making another change</h1>
             </Row>
 
             <Row>
