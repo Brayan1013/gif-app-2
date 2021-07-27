@@ -1,0 +1,36 @@
+.head-text {
+    text-align: center;
+    min-height: 10vh;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.input-container {
+    min-height: 10vh;
+    text-align: center;
+    
+}
+
+.input-text {
+    width: 90%;
+    height: 2rem;
+    font-size: 1.2rem;
+
+}
+
+.input-text:focus {
+    outline: none;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.loading-container{
+    margin-top: 2rem;
+    text-align: center;
+}
