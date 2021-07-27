@@ -35,6 +35,7 @@ export const Home = () => {
             <Row>
                 <Col span={24} className="head-text">Welcome to the gif app made by Brayan Mora</Col>
                 <h1>We are making another change</h1>
+                <h2>We are adding more features</h2>
 
             </Row>
 
